@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap");
+.repos, .card, .user-form, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Albert Sans", sans-serif;
+  flex-direction: column;
+  background-color: #0d1117;
+}
+
+.user-form {
+  background-color: #161b22;
+  width: 75%;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  margin-top: 2rem;
+}
+.user-form input {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+}
+.user-form input:focus {
+  outline: none;
+}
+.user-form input::-moz-placeholder {
+  color: #c2c3c5;
+}
+.user-form input::placeholder {
+  color: #c2c3c5;
+}
+.user-form button {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+main {
+  width: 450px;
+  margin: 15px 0;
+}
+
+.card {
+  border: 3px solid #30363d;
+  padding: 10px;
+  margin: 1rem;
+  flex-direction: column;
+  background-color: #161b22;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid #0d1117;
+}
+
+.user-info {
+  padding: 10px;
+}
+
+.user-name {
+  border-bottom: 1px solid #30363d;
+  line-height: 200%;
+}
+.user-name h2 {
+  color: white;
+  letter-spacing: 5px;
+}
+.user-name small {
+  font-weight: bold;
+  color: #c2c3c5;
+  letter-spacing: 1.5px;
+}
+
+p {
+  color: #eee;
+  text-align: justify;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+ul li {
+  background-color: #40454e;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  list-style: none;
+}
+
+.repos {
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.repos a {
+  color: #3696ff;
+  border: 1 px solid #30363d;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.repos a i {
+  color: #c2c3c5;
+}/*# sourceMappingURL=style.css.map */

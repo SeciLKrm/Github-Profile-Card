@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+@import "variables.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Albert Sans', sans-serif;
+    @extend %design;
+    flex-direction: column;
+    background-color: $main;
+   
+}
+
+.user-form{
+    background-color: $assistant;
+    @extend %design;
+    width: 75%;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    margin-top: 2rem;
+    input{
+        background-color: $main;
+        border: 1px solid $border;
+        padding: 5px 10px;
+        font-size: 16px;
+        width: 100%;
+        color:white;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+           color: $input; 
+        }
+    }
+
+    button{
+        font-size: 15px;
+        position: absolute;
+        right: 10px;
+        background-color: $main;
+        border: 1px solid $border;
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+}
+
+main{
+    width: 450px;
+    margin: 15px 0;
+}
+
+.card{
+    border: 3px solid $border;
+    padding: 10px;
+    margin: 1rem;
+    @extend %design;
+    flex-direction: column;
+    background-color: $assistant;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+
+    img{
+        width:150px;
+        height: 150px;
+        border-radius: 50% ;
+        border: 10px solid $main;
+
+    }
+}
+
+.user-info{
+    padding: 10px;
+}
+
+.user-name{
+    border-bottom: 1px solid $border;
+    line-height: 200%;
+    h2{
+        color: white;
+        letter-spacing: 5px;
+    }
+    small{
+        font-weight: bold;
+        color: $input;
+        letter-spacing: 1.5px;
+    }
+}
+p{
+    color: #eee;
+    text-align: justify;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    li{
+        background-color: #40454e;
+        padding: 5px 10px;
+        margin: 10px;
+        border-radius: 5px;
+        color: white;
+        box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+        list-style: none;
+    }
+
+}
+.repos{
+   width: 100%;
+   @extend %design;
+   flex-wrap: wrap;
+   font-size: 14px;
+
+    a{
+    color: #3696ff;
+    border: 1 px solid $border;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    margin: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-decoration: none;
+    padding: 5px 10px;
+   i{
+       color: $input;
+    }
+    }
+    
+}
